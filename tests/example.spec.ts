@@ -11,7 +11,7 @@ test('Test 2' , async({page})=>{
     console.log("Reached the Page - 2");
     await expect(page).toHaveTitle('Swag Labs');
     console.log("123");
-    console.log("234");
+    console.log("2345");
 })
     
 
