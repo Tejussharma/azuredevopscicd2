@@ -31,4 +31,9 @@ steps:
     publishLocation: 'pipeline'
   condition: always()   
 
-  
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/PlaywrightJunitReporter.xml'
+    testRunTitle: 'Junit Repoter'
+  condition: always()
